@@ -31,5 +31,8 @@
 } */
 
 @keyframes transform {
-  100% {transform: scale(0.5) translateX(50px) rotate(45deg);}
+  100% {
+    transform: scale(0.5) translateX(50px) rotate(45deg);
+    /* opacity: 50%; */
+  }
 }

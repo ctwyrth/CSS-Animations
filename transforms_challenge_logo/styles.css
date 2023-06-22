@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 100vw;
+  height: 100vh;
+}
+
+.box {
+  width: 30px;
+  height: 30px;
+  animation: moveBoxes 4s ease-in-out 5 alternate;
+  animation-fill-mode: both;
+}
+
+.box-red {
+  background-color: red;
+}
+
+.box-blue {
+  background-color: blue;
+}
+
+.box-green {
+  background-color: green;
+}
+
+.box-orange {
+  background-color: orange;
+}
+
+@keyframes moveBoxes {
+  100% {
+    transform: translate(calc(50vw - 15px), calc(50vh - 60px)) skewY(25deg) scaleX(8);
+  }
+}
