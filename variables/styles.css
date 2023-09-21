@@ -1,0 +1,32 @@
+:root {
+  --box-unit: 50px;
+  --main-color: blue;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hover-text {
+  transition: all 0.5s;
+}
+
+.hover-text:hover {
+  color: var(--main-color);
+  font-size: 20px;
+}
+
+.box {
+  position: fixed;
+  width: var(--box-unit);
+  height: var(--box-unit);
+  background: var(--main-color);
+  border: 1px solid black;
+  animation: size-down cubic-bezier(1,0,1,1) 0.5s 3 alternate both;
+}
+
+@keyframes size-down {
+  100% {transform: scale(0.3, 0.3); background: var(--main-color);}
+}
